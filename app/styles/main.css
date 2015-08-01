@@ -1,0 +1,26 @@
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+    header {
+        
+    }
+
+    .navbar-brand{
+        padding-left:20%;
+    }
+
+    #purpletux-navbar {
+        padding-right:20%;
+    }
+
+    .container {
+        max-width: 730px;
+    }
+
+    
+}
