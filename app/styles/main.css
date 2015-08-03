@@ -11,32 +11,43 @@
         min-height:55px;
         padding:0.5% 0 ;   
         margin-bottom:0px;
-        border-radius:0px; 
+        border-radius:0px;
+        border:none; 
     }
 
-    .navbar-brand {
-        font-size:155%;
+    .navbar-default .navbar-brand {
+        color:#FFF;
+    }
+
+    .navbar-default .navbar-brand:hover , .navbar-default .navbar-brand:focus {
+        color:#ee3a69;
+        transition:all ease-in-out 0.3s;
+    }
+    
+
+
+    .navbar-default .navbar-nav > li > a {
+        color:#FFF;
     }
 
     .navbar-purpletux a {
-        font-weight:800;
+        font-weight:600;
         text-transform:uppercase;    
-        color:#FFF;
     }
 
     #purpletux-navbar a{
         padding:12px;
     }
 
-    .navbar-nav li a:hover, .navbar-nav li a:focus {
+    .navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a:focus {
         /*background-color:#fF9C30;*/
         background-color:transparent;
-        color:#FF9C30;
+        color:#ee3a69;
         transition: all ease-in-out 0.2s;
     }
 
-    .navbar-nav .selected a , .navbar-nav .selected a:hover, .navbar-nav .selected a:focus {
-        color:#FF9C30;
+    .navbar-default .navbar-nav .selected a ,.navbar-default .navbar-nav .selected a:hover,.navbar-default .navbar-nav .selected a:focus {
+        color:#ee3a69;
         /*background-color:#fF9C30;*/
         background-color:transparent;
         transition: all ease-in-out 0.2s;
@@ -56,7 +67,6 @@
     .test {
         width:inherit;
         height:inherit;
-        float:left;
         background-color:rgba(85, 38, 138, 0.63);
     }
 
