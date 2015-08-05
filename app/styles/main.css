@@ -2,8 +2,19 @@
       padding-top: 0px;
       padding-bottom: 0px;
       outline:none;
+      font-family: 'Oswald', sans-serif;
+      font-stretch:2pt;
+      text-align:justify;
+       font-size:120%;
     }
 
+    .row {
+        margin:0 !important;
+    }
+
+    .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+        margin:0;
+    }
     .navbar-purpletux {
         /*background-color:#8d189f;*/
         background-color:rgba(85, 38, 138, 0.63);
@@ -13,10 +24,12 @@
         margin-bottom:0px;
         border-radius:0px;
         border:none; 
+        font-size:120%;
     }
 
     .navbar-default .navbar-brand {
         color:#FFF;
+        font-size:200%;
     }
 
     .navbar-default .navbar-brand:hover , .navbar-default .navbar-brand:focus {
@@ -24,8 +37,6 @@
         transition:all ease-in-out 0.3s;
     }
     
-
-
     .navbar-default .navbar-nav > li > a {
         color:#FFF;
     }
@@ -54,28 +65,67 @@
     }
 
     #home {
-        background:url('../images/event.jpg') no-repeat ;
-        background-size:100%;
         color:#FFF;
         text-align:justify;
     }
 
-    #home .test {
-        padding:0px 20%;    
+    #home .purpletux-home {
+        padding:6% 15% 0 15%;    
     }
 
-    .test {
+    .purpletux-home {
         width:inherit;
         height:inherit;
         background-color:rgba(85, 38, 138, 0.63);
+        font-weight:300;
+        font-size:130%;
+    }
+
+    .purpletux-head {
+        text-align:center;
+        margin:20px 0;
+        font-size:350%;
+        font-weight:700;
+        text-transform:uppercase;
+    }
+
+    #about .purpletux-about {
+        padding:6% 15% 6% 15%;
+        background-color:#F1F1F1;
+        text-align:justify;
+        font-weight:300;
+        font-size:130%;
+    }
+
+    #events .purpletux-events {
+        padding:6% 15% 6% 15%;
+        text-align:justify;
+        font-weight:300;
+        font-size:130%;
+    }
+
+    #contact .purpletux-contact {
+        padding:6% 15% 6% 15%;
+        background-color:#F1F1F1;
+        text-align:justify;
+        font-weight:300;
+        font-size:130%;
     }
 
     .container-fluid {
         padding:0px;
     }
 
+    .navbar-toggle {
+        background-color:#DEDEDE;
+    }
+
 /* Responsive: Portrait tablets and up */
 @media (min-width: 768px) {
+
+    body {
+        font-size:160%;
+    }
 
     .navbar-purpletux{
         padding-top:40px;
@@ -94,11 +144,15 @@
         max-width: 730px;
     }
 
+    #home {
+        background: url('../images/event.jpg') no-repeat;
+        background-size:100%;
+    }
     
     section .row{
         width:100%;
         padding:0px;
         margin:0px;
-        min-height:600px;
+       
     }
 }
