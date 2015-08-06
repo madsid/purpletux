@@ -15,16 +15,20 @@
     .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
         margin:0;
     }
+
     .navbar-purpletux {
         /*background-color:#8d189f;*/
-        background-color:rgba(85, 38, 138, 0.63);
+        background-color:transparent;
         color:#FFF;
         min-height:55px;
-        padding:0.5% 0 ;   
+        padding:0.5% 0;   
         margin-bottom:0px;
         border-radius:0px;
         border:none; 
         font-size:120%;
+        position:fixed;
+        width:100%;
+        z-index:100;
     }
 
     .navbar-default .navbar-brand {
@@ -110,6 +114,21 @@
         text-align:justify;
         font-weight:300;
         font-size:130%;
+    }
+
+    #contact form {
+        margin-top:6%;
+    }
+    #contact form input {
+        padding:20px 12px;
+    }
+
+    #contact form .submit {
+        margin-left:15px;
+    }
+
+    #contact {
+        margin-bottom:20%;
     }
 
     .container-fluid {
