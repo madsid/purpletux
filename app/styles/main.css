@@ -21,7 +21,7 @@
         background-color:transparent;
         color:#FFF;
         min-height:55px;
-        padding:0.5% 0;   
+        padding:0;   
         margin-bottom:0px;
         border-radius:0px;
         border:none; 
@@ -29,6 +29,7 @@
         position:fixed;
         width:100%;
         z-index:100;
+        transition:all 0.2s ease-in-out; 
     }
 
     .navbar-default .navbar-brand {
@@ -74,7 +75,7 @@
     }
 
     #home .purpletux-home {
-        padding:6% 15% 0 15%;    
+        padding:10% 15% 0 15%;    
     }
 
     .purpletux-home {
@@ -128,7 +129,7 @@
     }
 
     #contact {
-        margin-bottom:20%;
+        
     }
 
     .container-fluid {
@@ -139,11 +140,35 @@
         background-color:#DEDEDE;
     }
 
+    footer {
+        /*background-color:rgba(85, 38, 138, 0.63);*/
+        min-height:100px;
+        margin-top:50px;
+    }
+
+    footer ul {
+        padding-top:2%;
+    }
+
+    footer li{
+        float:left;
+        margin:0 10px;
+        list-style-type: none;
+    }
+
 /* Responsive: Portrait tablets and up */
 @media (min-width: 768px) {
 
     body {
         font-size:160%;
+    }
+
+    .navbar-default .navbar-brand {
+        padding-top:20px;
+    }
+
+    #purpletux-navbar a {
+        padding-top:20px;
     }
 
     .navbar-purpletux{
