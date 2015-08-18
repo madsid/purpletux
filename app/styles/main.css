@@ -2,14 +2,20 @@
       padding-top: 0px;
       padding-bottom: 0px;
       outline:none;
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-stretch:2pt;
       text-align:justify;
-       font-size:120%;
+      font-size:120%;
+      color:#555;
     }
 
     .row {
         margin:0 !important;
+    }
+
+    .opensans {
+         font-family: 'Open Sans', 'Roboto', sans-serif;
+            
     }
 
     .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
@@ -30,6 +36,7 @@
         width:100%;
         z-index:100;
         transition:all 0.2s ease-in-out; 
+        font-family: 'Oswald', sans-serif;
     }
 
     .navbar-default .navbar-brand {
@@ -72,10 +79,13 @@
     #home {
         color:#FFF;
         text-align:justify;
+        background: url('../images/event.jpg') no-repeat;
+        background-size:cover;
     }
 
     #home .purpletux-home {
-        padding:10% 15% 0 15%;    
+        padding:13% 13% 0 13%; 
+        margin:0 auto;   
     }
 
     .purpletux-home {
@@ -86,20 +96,61 @@
         font-size:130%;
     }
 
+    #home-text {
+        opacity:0;
+        margin-top:-2%;
+        transition:all ease-in-out 0.5s;
+    }
+
+    #down-icon img{
+        position:absolute;
+        height:80px;
+        width:80px;
+        left:48%;
+        bottom:10px;
+        transition:all ease-in-out 0.7s;
+        cursor:pointer;
+    }
+
     .purpletux-head {
         text-align:center;
-        margin:20px 0;
-        font-size:350%;
+        font-size:310%;
         font-weight:700;
         text-transform:uppercase;
+        margin-bottom:4%;
+        font-family: 'Oswald', sans-serif;
     }
 
     #about .purpletux-about {
-        padding:6% 15% 6% 15%;
+        padding:6% 8% 6% 8%;
         background-color:#F1F1F1;
         text-align:justify;
         font-weight:300;
         font-size:130%;
+    }
+
+    #about .purpletux-about p{
+        padding-right:3%;
+        font-size:100%;
+    }
+
+    #about .purpletux-about ul{
+        font-size:90%;
+    }
+    
+    #about .purpletux-about ul li{
+        list-style-type:none;
+    }
+
+     #about .purpletux-about ul li span{
+        padding-right:2%;
+        font-size:89%;
+    }
+
+    .shadow img{
+        border:10px solid #FFF;
+        margin:0;
+        padding:0;
     }
 
     #events .purpletux-events {
@@ -107,6 +158,61 @@
         text-align:justify;
         font-weight:300;
         font-size:130%;
+        text-align:center;
+        margin:0 auto;
+    }
+
+    #events .purpletux-events .fa-icons {
+        opacity:0;
+        transition:all ease-in-out 0.3s;
+    }
+
+    #events .purpletux-events .fa-icons a {
+        background:#EFEFEF;
+        border-radius:49%;
+        padding:14% 10% 10% 10%;
+        /*transition:all ease-in-out 0.3s;*/       
+    }
+
+     #events .purpletux-events .fa-icons a:hover {
+        background:#CFCFCF;  
+    }
+
+    #events .purpletux-events .fa-icons .fa-circle-purpletux {
+        padding:24% 11% 10% 11%;
+    }
+    
+    #events .purpletux-events span{
+        font-size:200%;
+        color:tomato; 
+        margin-bottom:10%;
+    }
+
+    .purpletux-bold {
+        font-weight:600;    
+    }
+    
+    #events .purpletux-events span:hover {
+        color:#ee2222;
+    }
+
+    .fa-icons {
+        margin-top:95px;
+        min-height:150px;
+    }
+
+    .fa-icons div{
+        height:150px;
+    }
+
+     #events .purpletux-events .fa-icons .fa-circle-purpletux {
+        padding:13% 11% 10% 11%;
+    }
+
+    #events-display{
+        text-align:justify;
+        padding:0 8%;
+        margin-top:3%;
     }
 
     #contact .purpletux-contact {
@@ -118,7 +224,7 @@
     }
 
     #contact form {
-        margin-top:6%;
+        margin-top:3%;
     }
     #contact form input {
         padding:20px 12px;
@@ -126,6 +232,8 @@
 
     #contact form .submit {
         margin-left:15px;
+        background-color: tomato;
+        color: white;
     }
 
     #contact {
@@ -142,8 +250,9 @@
 
     footer {
         /*background-color:rgba(85, 38, 138, 0.63);*/
-        min-height:100px;
-        margin-top:50px;
+        background-color:#444;
+        min-height:200px;
+        text-align:center;
     }
 
     footer ul {
@@ -151,9 +260,36 @@
     }
 
     footer li{
-        float:left;
+        display:inline;
         margin:0 10px;
         list-style-type: none;
+    }
+
+    footer li a {
+        margin-right:10px;   
+        color:#AFAFAF; 
+        font-size:120%;
+    }
+
+     footer li a:hover {
+        transition:all ease-in-out 0.3s;
+        color:#DEDEDE; 
+        text-decoration:none;
+    }
+    footer li::after {
+        content:"|";    
+    }
+
+    footer li:last-child::after {
+        content:'';    
+    }
+
+    input {
+        background-color:#f7f7f7;
+    }
+
+    .icons {
+        font-size:130%;
     }
 
 /* Responsive: Portrait tablets and up */
@@ -197,6 +333,23 @@
         width:100%;
         padding:0px;
         margin:0px;
-       
+    }
+
+    #events .purpletux-events span{
+        font-size:389%;
+        color:tomato; 
+    }
+
+    .fa-icons {
+        margin-top:30px;
+        min-height:150px;
+    }
+
+     #events .purpletux-events .fa-icons .fa-circle-purpletux {
+        padding:24% 11% 10% 11%;
+    }
+
+    #events .purpletux-events .fa-icons a {
+        padding:28% 11% 10% 11%;
     }
 }

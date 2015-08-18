@@ -12,7 +12,7 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css' />
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -29,7 +29,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-   <section class="container-fluid" id="home">
+   <section class="container-fluid img-responsive" id="home">
        <nav class="navbar navbar-default navbar-purpletux">
            <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
@@ -54,45 +54,82 @@
            </div><!-- /.container-fluid -->
        </nav>
        <div class="row purpletux-home">
-           <h1 class="purpletux-head"> Best event's happen with us</h1>
-           <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur pulvinar quam ultricies pharetra. Phasellus eu auctor elit, sed porttitor odio. Cras sapien ipsum, consectetur a tortor eu, feugiat lacinia dolor. Vestibulum vel luctus mauris, nec rhoncus urna. Etiam mattis, urna id ultrices eleifend, massa nunc pellentesque ipsum, quis ornare nulla ex eget purus. Duis at elementum libero, quis convallis purus. Cras luctus lectus ac enim scelerisque, aliquam posuere justo fermentum.
+            <div id="home-text" class="center-block">
+               <h1 class="purpletux-head"> Best event's happen with us</h1>
+               <p class="opensans">
+                   A full service event management company that beings you peace of mind. we are a talented event 
+                   experts, event management solutions for your events. Event plans need to be strategically implemented 
+                   with deep understanding of target audience in order to engage and capture the right audience and we do that
+                   better than any others. We believe events are so much more than parties and conferences. 
+                   Events connect people, breed innovation and build communities.
+              </p>
 
-               Sed eu malesuada quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce elementum massa nulla, quis dignissim magna congue at. In eu tristique tortor, a ultricies ante. Nullam mollis id quam non maximus. Nunc quis metus in dolor maximus pellentesque vitae eget magna. Quisque ullamcorper est nec nunc tempus, vitae tempor metus maximus. In hac habitasse platea dictumst. Proin iaculis augue non tincidunt vehicula.
-
-               Aliquam porta neque ut dolor tristique efficitur. Nulla ut justo tortor. Nunc ullamcorper sem purus, commodo condimentum lectus mattis nec. Fusce vitae ex orci. Nunc viverra, purus vel ornare vulputate, sem sapien dapibus tortor, at tempus sapien neque a justo. Aenean varius ultricies varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec egestas lorem vel dui malesuada, in vestibulum metus vulputate. Aliquam eros nulla, suscipit ac quam sed, bibendum cursus dui. Mauris molestie sem sit amet ligula lacinia sagittis.
-
-               Suspendisse molestie lectus finibus enim accumsan facilisis. Aenean vel ipsum aliquet, faucibus ante quis, aliquet odio. Ut ut turpis tortor. Maecenas faucibus felis urna, congue facilisis odio viverra ac. Proin scelerisque imperdiet ante, quis vestibulum tortor. Vivamus tellus purus, aliquet et nisl in, tempor pulvinar ex. Suspendisse mollis nunc eget lacus luctus, ut hendrerit risus sagittis. Mauris bibendum lorem nec ornare tincidunt. Sed orci orci, bibendum nec nisi at, aliquam congue magna. Quisque tristique venenatis mi, id fringilla tellus molestie et.
-           </p>
+                <span id="down-icon">
+                    <img src="images/arrow-down.png" alt="arrow-down" onclick="$('html,body').animate({scrollTop:$('#about').offset().top},'fast');return false"/>
+                </span>
+            </div>
           
        </div>
    </section>
 
     <section class="container-fluid" id="about">
         <div class="row purpletux-about">
-            <h1 class="purpletux-head"> We are good at what we do</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur pulvinar quam ultricies pharetra. Phasellus eu auctor elit, sed porttitor odio. Cras sapien ipsum, consectetur a tortor eu, feugiat lacinia dolor. Vestibulum vel luctus mauris, nec rhoncus urna. Etiam mattis, urna id ultrices eleifend, massa nunc pellentesque ipsum, quis ornare nulla ex eget purus. Duis at elementum libero, quis convallis purus. Cras luctus lectus ac enim scelerisque, aliquam posuere justo fermentum.
+            <h1 class="purpletux-head"> our approach !</h1>
+            
+            <div class="col-md-12"> 
+                <div class="opensans col-md-7">
+                    <p>
+                        At Purpletux, We know that a successful event is more than flowers and ligthing. Unlike our 
+                        competetors we give importance to 3 key components of the events, but they do not 
+                        define the event. Undestanding your reasons for putting an event lays the foundation for us to 
+                        make an event successful.
+                        
+                    </p>
 
-                Sed eu malesuada quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce elementum massa nulla, quis dignissim magna congue at. In eu tristique tortor, a ultricies ante. Nullam mollis id quam non maximus. Nunc quis metus in dolor maximus pellentesque vitae eget magna. Quisque ullamcorper est nec nunc tempus, vitae tempor metus maximus. In hac habitasse platea dictumst. Proin iaculis augue non tincidunt vehicula.
+                    <ul>
+                        <li><span class="fa fa-dot-circle-o"></span>We will get to know you</li>
+                        <li> <span class="fa fa-dot-circle-o"></span>We plan events based on what we have learnt</li>
+                        <li> <span class="fa fa-dot-circle-o"></span>Now magic happens, you can sit back and relax</li>
+                    </ul>
 
-                Aliquam porta neque ut dolor tristique efficitur. Nulla ut justo tortor. Nunc ullamcorper sem purus, commodo condimentum lectus mattis nec. Fusce vitae ex orci. Nunc viverra, purus vel ornare vulputate, sem sapien dapibus tortor, at tempus sapien neque a justo. Aenean varius ultricies varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec egestas lorem vel dui malesuada, in vestibulum metus vulputate. Aliquam eros nulla, suscipit ac quam sed, bibendum cursus dui. Mauris molestie sem sit amet ligula lacinia sagittis.
-            </p>
+                    <p>
+                        We consider every aspect of your guests experience: the space, the food, the service, 
+                        the tiny inspirational touches that add up to a truly special event. So, You can relax and have fun
+                    </p>
+                </div>
+                
+                <div class="shadow">
+                    <img src="../images/event-process.jpg" class="col-md-5 img-responsive" />
+                </div>
+            </div>
 
         </div>
     </section>
     
     <section class="container-fluid" id="events">
         <div class="row purpletux-events">
-            <h1 class="purpletux-head">Check out the our events </h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur pulvinar quam ultricies pharetra. Phasellus eu auctor elit, sed porttitor odio. Cras sapien ipsum, consectetur a tortor eu, feugiat lacinia dolor. Vestibulum vel luctus mauris, nec rhoncus urna. Etiam mattis, urna id ultrices eleifend, massa nunc pellentesque ipsum, quis ornare nulla ex eget purus. Duis at elementum libero, quis convallis purus. Cras luctus lectus ac enim scelerisque, aliquam posuere justo fermentum.
+            <h1 class="purpletux-head">Event Management </h1>
+            <div class="fa-icons col-md-12">
+                <div class="col-md-4">
+                    <a href="#events" id="users"><span class="fa fa-users"></span></a> 
+                    <p class="purpletux-bold">People</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="#events" class="fa-circle-purpletux" id="bullseye"><span class="fa fa-bullseye"></span></a> 
+                    <p class="purpletux-bold">Precision</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="#events" id="heart"><span class="fa fa-heart"></span></a> 
+                    <p class="purpletux-bold">Passion</p>
+                </div>
+            </div>
 
-                Sed eu malesuada quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce elementum massa nulla, quis dignissim magna congue at. In eu tristique tortor, a ultricies ante. Nullam mollis id quam non maximus. Nunc quis metus in dolor maximus pellentesque vitae eget magna. Quisque ullamcorper est nec nunc tempus, vitae tempor metus maximus. In hac habitasse platea dictumst. Proin iaculis augue non tincidunt vehicula.
-
-                Aliquam porta neque ut dolor tristique efficitur. Nulla ut justo tortor. Nunc ullamcorper sem purus, commodo condimentum lectus mattis nec. Fusce vitae ex orci. Nunc viverra, purus vel ornare vulputate, sem sapien dapibus tortor, at tempus sapien neque a justo. Aenean varius ultricies varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec egestas lorem vel dui malesuada, in vestibulum metus vulputate. Aliquam eros nulla, suscipit ac quam sed, bibendum cursus dui. Mauris molestie sem sit amet ligula lacinia sagittis.
-            </p>
-
+            <div id="events-display">
+                <p> we create events that amazes all the people involved in events. our first priority is to make 
+                the clents event success and we are very committed to it. our extremly talented team of event planners
+                will work closely with our clients to make that possible. we build relationships and trust 
+                to enable success.</p>
+            </div>
         </div>
     </section>
 
@@ -102,17 +139,22 @@
               <form class="form-horizontal col-md-16">
                   <div class="form-group">
                       <div class="col-md-offset-3 col-md-6">
-                          <input type="text" class="form-control" id="inputName" placeholder="Name">
+                          <input type="text" class="form-control" id="inputName" placeholder="Name" required>
                       </div>
                   </div>
                   <div class="form-group">
                       <div class="col-md-offset-3 col-md-6">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
                       </div>
                   </div>
                   <div class="form-group">
                       <div class="col-md-offset-3 col-md-6">
-                          <textarea class="form-control" id="message" rows="8" placeholder="Message"></textarea>
+                          <input type="tel" class="form-control" id="inputContact" placeholder="Phone No">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="col-md-offset-3 col-md-6">
+                          <textarea class="form-control" id="message" rows="8" placeholder="Message" required></textarea>
                       </div>
                   </div>
                   <div class="form-group">
@@ -126,18 +168,25 @@
 
     <footer class="container-fluid">
         <div class="row">
-            <h1 class="col-md-offset-2 col-md-3">
-                PURPLETUX
-            </h1>
-            <div class="col-md-13">
+            <ul class="icons col-md-16">
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-dribbble"></a></li>
+                <li><a href="#" class="fa fa-envelope-o"></a></li>
+            </ul>
+            <div class="col-md-16">
                 <ul>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#home">Events</a></li>
-                    <li><a href="#home">Contact us</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#home">EVENTS</a></li>
+                    <li><a href="#home">CONTACT US</a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    
+
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -176,6 +225,7 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Oswald:400,700,300' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </body>
 </html>
