@@ -55,7 +55,7 @@ $(document).ready(function () {
             $('.navbar-purpletux').css({ "background-color": '#8d189f', 'padding-top': '3px', 'opacity': '0.94' });
         }
         if ($(window).scrollTop() < 5) {
-            $('.navbar-purpletux').css({ "background-color": 'transparent', 'padding-top': '40px', 'opacity': '1' });
+            $('.navbar-purpletux').css({ "background-color": 'transparent', 'padding-top': '3%', 'opacity': '1' });
         }
         if ($(window).scrollTop() > (events - 150) && (events + $('#events').height() -200) > $(window).scrollTop()  ) {
             $('.fa-icons').css({ 'opacity': '1' });

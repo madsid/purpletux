@@ -26,10 +26,11 @@
         /*background-color:#8d189f;*/
         background-color:transparent;
         color:#FFF;
-        min-height:55px;
+        
         padding:0;   
         margin-bottom:0px;
         border-radius:0px;
+        padding-top: 0;
         border:none; 
         font-size:120%;
         position:fixed;
@@ -84,7 +85,7 @@
     }
 
     #home .purpletux-home {
-        padding:13% 13% 0 13%; 
+        padding:22% 13% 0 13%; 
         margin:0 auto;   
     }
 
@@ -104,8 +105,8 @@
 
     #down-icon img{
         position:absolute;
-        height:80px;
-        width:80px;
+        height:40px;
+        width:40px;
         left:48%;
         bottom:10px;
         transition:all ease-in-out 0.7s;
@@ -114,7 +115,7 @@
 
     .purpletux-head {
         text-align:center;
-        font-size:310%;
+        font-size:280%;
         font-weight:700;
         text-transform:uppercase;
         margin-bottom:4%;
@@ -298,7 +299,21 @@
     body {
         font-size:160%;
     }
-
+    
+    #down-icon img{
+        height:80px;
+        width:80px;
+    }
+    
+     .purpletux-head {
+        font-size:310%;
+    }
+    
+    #home .purpletux-home {
+        padding:13% 13% 0 13%; 
+        margin:0 auto;   
+    }
+    
     .navbar-default .navbar-brand {
         padding-top:20px;
     }
