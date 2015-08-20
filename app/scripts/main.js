@@ -57,7 +57,10 @@ $(document).ready(function () {
         if ($(window).scrollTop() < 5) {
             $('.navbar-purpletux').css({ "background-color": 'transparent', 'padding-top': '3%', 'opacity': '1' });
         }
-        if ($(window).scrollTop() > (events - 150) && (events + $('#events').height() -200) > $(window).scrollTop()  ) {
+        
+        console.log( $(window).scrollTop() +' scroll-processed '+ events + ' and ' +$('#events').height()+ ' window ' + $(window).height() / 50);
+        
+        if ($(window).scrollTop() > (events - $(window).height() / 2.8) && (events + $('#events').height() -200) > $(window).scrollTop()  ) {
             $('.fa-icons').css({ 'opacity': '1' });
         }
         else {

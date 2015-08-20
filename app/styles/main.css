@@ -164,7 +164,7 @@
     }
 
     #events .purpletux-events .fa-icons {
-        opacity:0;
+        opacity:1;
         transition:all ease-in-out 0.3s;
     }
 
@@ -252,7 +252,6 @@
     footer {
         /*background-color:rgba(85, 38, 138, 0.63);*/
         background-color:#444;
-        min-height:200px;
         text-align:center;
     }
 
@@ -353,6 +352,11 @@
     #events .purpletux-events span{
         font-size:389%;
         color:tomato; 
+    }
+    
+    #events .purpletux-events .fa-icons {
+        opacity:0;
+        transition:all ease-in-out 0.3s;
     }
 
     .fa-icons {
