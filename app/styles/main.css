@@ -8,11 +8,22 @@
       font-size:120%;
       color:#555;
     }
+    
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        background-color: rgba(255,255,255,0.5);
+    }
 
     .row {
         margin:0 !important;
     }
-
+    
+    .navbar-brand img{
+        padding-top: 0;
+        margin-top: -10px;
+        width: 40px;
+        height: 40px;    
+    }
+    
     .opensans {
          font-family: 'Open Sans', 'Roboto', sans-serif;
             
@@ -209,6 +220,16 @@
      #events .purpletux-events .fa-icons .fa-circle-purpletux {
         padding:13% 11% 10% 11%;
     }
+    
+    #events-questions{
+        padding:0 8%;
+        text-align: left;
+        font-style: italic;
+    }
+    
+    #events-questions h2{
+        color: tomato;
+    }
 
     #events-display{
         text-align:justify;
@@ -240,6 +261,7 @@
     #contact {
         
     }
+    
 
     .container-fluid {
         padding:0px;
@@ -297,6 +319,10 @@
 
     body {
         font-size:160%;
+    }
+    
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        background-color: rgba(0,0,0,0)
     }
     
     #down-icon img{

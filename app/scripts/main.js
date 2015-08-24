@@ -58,7 +58,7 @@ $(document).ready(function () {
             $('.navbar-purpletux').css({ "background-color": 'transparent', 'padding-top': '3%', 'opacity': '1' });
         }
         
-        console.log( $(window).scrollTop() +' scroll-processed '+ events + ' and ' +$('#events').height()+ ' window ' + $(window).height() / 50);
+        //console.log( $(window).scrollTop() +' scroll-processed '+ events + ' and ' +$('#events').height()+ ' window ' + $(window).height() / 50);
         
         if ($(window).scrollTop() > (events - $(window).height() / 2.8) && (events + $('#events').height() -200) > $(window).scrollTop()  ) {
             $('.fa-icons').css({ 'opacity': '1' });
