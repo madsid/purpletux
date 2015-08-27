@@ -68,6 +68,30 @@ $(document).ready(function () {
         }
 
     }
+    
+    $('.submit').click(function(event){
+        event.preventDefault();
+        
+        var data = {
+            name: $('#inputName').val(),
+            email: $('#inputEmail').val(),
+            contact: $('#inputContact').val(),
+            message: $('#message').val(),
+            send: true,
+        };
+        
+        $.post( "mail.php", data)
+        .done(function() {
+            alert( "Thanks! We will get back to you soon!!" );
+        })
+        .fail(function() {
+            alert( "Sorry something went wrong please try again!" );
+        })
+        .always(function() {
+            //alert( "finished" );
+        });
+        
+    })
 
     
 });
