@@ -20,12 +20,13 @@ $(document).ready(function () {
     }
 
     function clickEvents() {
-        $('.fa-icons a').click(function () {
+        /*$('.fa-icons a').click(function () {
             switch ($(this)[0].id) {
                 case "users": $('#events-display p')[0].innerHTML = "we create events that amazes all the people involved in events. our first priority is to make the clents event success and we are very committed to it. our extremly talented team of event planners will work closely with our clients to make that possible. we build relationships and trust to enable success."; break;
                 default: $('#events-display p')[0].innerHTML = "test"; break;
             }
         });
+        */
     }
 
     function arrowDownAnimation() {
@@ -82,7 +83,9 @@ $(document).ready(function () {
         
         $.post( "mail.php", data)
         .done(function() {
-            alert( "Thanks! We will get back to you soon!!" );
+            //alert( "Thanks! We will get back to you soon!!" );'
+            $('#contact-head').html('Thanks! We will get back to you soon!!');
+            $('.submit')[0].disabled = true;
         })
         .fail(function() {
             alert( "Sorry something went wrong please try again!" );

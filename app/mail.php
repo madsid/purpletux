@@ -4,7 +4,7 @@
   
   //Email information
   //$admin_email = "kruthikanj@live.in";
-  $admin_email = "kruthikanj@live.in";
+  $admin_email = "contact@purpletux.in";
   $email = $_POST['email'];
   $name = $_POST['name'];
   $contact = $_POST['contact'];
